@@ -1,0 +1,225 @@
+.Home_Page {
+  display: grid;
+  user-select: none;
+  width: 100%;
+  //   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210926/pngtree-glassmorphism-bacground-illustration-image_880659.jpg);
+  .Custome_Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(163, 91, 28);
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(210, 138, 75);
+    margin-top: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      color: rgb(210, 138, 75);
+    }
+  }
+  .Main_Top_Section {
+    display: grid;
+    user-select: none;
+    width: 100%;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-color-pastel-background-image_908556.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Section_One {
+      backdrop-filter: blur(4px) saturate(180%);
+      -webkit-backdrop-filter: blur(4px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      height: 100vh;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      display: grid;
+      grid-template-columns: auto max-content;
+      align-items: center;
+      padding: 50px 0px 50px 100px;
+      > img {
+        height: 500px;
+        width: 100%;
+        display: grid;
+      }
+
+      h5 {
+        font-size: 40px;
+        display: flex;
+        font-weight: 700;
+      }
+    }
+  }
+  .Section_Two {
+    display: grid;
+    grid-template-columns: auto max-content;
+    gap: 50px;
+    position: relative;
+    padding: 50px;
+    padding-top: 50px;
+
+    .Left_Div {
+      display: grid;
+      grid-template-rows: repeat(3, max-content);
+      gap: 30px;
+      z-index: 2;
+      background-color: #fff;
+      h2 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #203d5b;
+        b {
+          color: #dd8f19;
+        }
+      }
+      span {
+        font-size: 15px;
+        font-weight: 500;
+        color: #203d5b;
+      }
+      .Custome_Btn {
+        width: max-content;
+      }
+    }
+
+    .Right_Div {
+      display: grid;
+      z-index: 2;
+      .IMG {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        background-size: 100%;
+        background-position: 100%;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/655e1faf44ab605bebc8e824/7c2cd3ca-38e0-45ab-b679-459623471302/Small+-+Rebecca+Schaffer+Branding+by+Graciela+Laurent+-13.jpg);
+        border-radius: 100px 0px 100px 0px;
+      }
+    }
+  }
+
+  .Contact_Form {
+    background-color: #fff;
+    z-index: 2;
+    h4 {
+      color: #203d5b;
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 10px;
+      border-bottom: 4px solid #fed13f;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      width: max-content;
+      margin: auto;
+    }
+  }
+
+  .Contact_Form {
+    display: grid;
+    grid-template-columns: minmax(200px, 600px) auto;
+    gap: 100px;
+    background-color: #fff;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    z-index: 1 !important;
+    justify-content: center;
+    background-image: url(../images//bg-01.svg);
+    background-position: 70%;
+    h4 {
+      justify-content: flex-start !important;
+      margin: 0%;
+    }
+    span {
+      font-size: 14px;
+      color: var(--dark_White);
+    }
+    .Form_Section {
+      display: grid;
+      grid-template-rows: repeat(3, max-content);
+      gap: 30px;
+      .Form {
+        display: grid;
+        grid-template-rows: repeat(3, max-content);
+        gap: 30px;
+        input[type="text"],
+        textarea {
+          height: 30px;
+          border: 1px solid #ccc;
+
+          color: var(--darkclur);
+          padding-left: 7px;
+          background-color: #f5f9fd;
+          outline: none;
+          font-weight: 600;
+          font-size: 13px;
+        }
+        input[type="text"]::placeholder {
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--placeholder);
+        }
+        textarea {
+          height: 150px !important;
+        }
+
+        button {
+          font-weight: 700;
+          border: 1px solid #f7c624;
+          background-color: rgb(210, 138, 75);
+          padding: 5px 0px;
+          color: #fff;
+          cursor: pointer;
+          font-size: 20px;
+          &:hover {
+            opacity: 70%;
+          }
+          &:active {
+            transform: scale(0.98);
+          }
+        }
+      }
+    }
+
+    .Data_Info {
+      display: grid;
+      grid-auto-rows: max-content;
+      gap: 20px;
+      justify-content: flex-end;
+
+      img {
+        margin-top: -20px;
+        width: 20vw;
+
+        display: flex;
+      }
+      .Data_Address {
+        display: grid;
+        grid-template-columns: max-content auto;
+        gap: 20px;
+        align-items: center;
+        .Icon {
+          height: 30px;
+          width: 30px;
+          border: 3px solid #f9c108;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            color: #f9c108;
+            font-size: 21px;
+          }
+        }
+        span {
+          font-size: 15px;
+          font-weight: 500 !important;
+          color: var(--placeholder);
+        }
+      }
+    }
+  }
+}

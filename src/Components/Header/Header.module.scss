@@ -1,0 +1,53 @@
+.Header {
+  height: 50px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: max-content auto max-content;
+  position: fixed;
+  top: 0;
+  gap: 50px;
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-top: 5px;
+  right: 0;
+  //   background-color: rgb(209, 133, 62);
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    li {
+      list-style: none;
+      font-size: 17px;
+      font-weight: 500;
+      color: rgb(224, 116, 22);
+      cursor: pointer;
+      transform: 0.2s;
+      &:hover {
+        border-bottom: 2px solid rgb(224, 116, 22);
+      }
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(171, 87, 13) !important;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(235, 127, 32) !important;
+    margin-top: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff !important;
+      color: rgb(235, 127, 32) !important;
+    }
+  }
+}
